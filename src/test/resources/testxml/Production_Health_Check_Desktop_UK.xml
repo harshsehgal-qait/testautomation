@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Kate Spade Production Health Check Suite" preserve-order="true" parallel="classes" thread-count="3">
+	<test name="Kate Spade Production Health Check Suite - UK - Desktop">
+		<parameter name="locale" value="UK" />
+		<groups>
+			<run>
+				<include name="desktop"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_608_Header_VerifyElementsIncludedInFullExpandedHeaderTest"/>
+			<class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_623_VerifyHomePageFooterLinks"/>
+			<class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_625_664_665VerificationOFShopGridQuickBuyCheckout"/>
+			<class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_630_633_Verify_SearchNavigation"/>
+			<class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_636_Verify_Contact_Us_Page"/>
+			<class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_640_641_644_VerifyStoreLocatorFunctionality"/>
+			<class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_647_VerifyUserCanChangeCountryFromCountrySelector"/>
+			<class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_648_Verify_CountrySelectionPage"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_662_Category_Browse_Page_Load_More"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_670_671_672_Product_Tiles_Included_Elements"/>
+			<class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_679_VerifyPDP"/>
+			<class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_680_PDP_Verify_UserIs_Able_To_Add_Item_To_Wishlist"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_681_697_PDP_Verify_User_Has_The_Ability_To_See_Recommendations"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_682_PDP_Verify_User_Has_The_Ability_To_See_Previously_Viewed_Products"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_683_Verify_Registered_User_Is_Able_To_Add_A_Product_To_Their_Bag"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_774_Account_Creation"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_778_VerifyUsersPersonalDataOnMyAccountPage"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_780_782_VerifyUserIsAbleToAddAndEditAddresses"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_802_Verify_404_Error_Page"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.TestCase_VerificationOfShopGridPage"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.TestCase_VerifyUserIsAbleToRegisterAndLoginIntoKateSpade"/>
+            
+            <!-- NEWLY ADDED TEST CASES OF KATE SPADE EU EXPANSION -->
+            
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.EEGI_69_VerifyBV_UGC_OnHomePageAndPDP"/>
+            
+            <!-- UK LOCALE SPECIFIC -->
+            
+            <class name="com.katespade.tests.regions.eu.uk.viewports.desktop.EEGI_61_VerifyPCAPredictAddressInCheckout"/>
+            <class name="com.katespade.tests.regions.eu.uk.viewports.desktop.EEGI_88_VerifyPCAPredictAddressInMyAccount"/>
+                 
+		</classes>
+	</test>
+</suite>

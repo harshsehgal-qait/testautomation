@@ -1,0 +1,19 @@
+email:
+  recepients: mohdkamran@qainfotech.com
+  
+test_data_mode: wiki-page                                                                                         
+test_data_pages:                                                  
+    UK: "551649281"
+    DE: "565149697"
+    IE: "564887568"
+    FR: "565018635"                                                     
+
+# credentials
+wiki_url: https://5thandpacific.atlassian.net
+wiki_username: mohdkamran@qainfotech.com
+wiki_password: Qait@1234
+
+# Demandware API
+api_url: https://uk-dwstaging.coach.com/
+api_client_id: 1c9f188b-df29-46a4-a5f1-d0c67fd606b2
+api_version: v16_5

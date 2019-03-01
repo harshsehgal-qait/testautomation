@@ -1,0 +1,35 @@
+win-chrome-local:
+    browser: chrome
+    seleniumserver: local
+win-firefox-local:
+    browser: firefox
+    seleniumserver: local
+win-ie-local:
+    browser: ie 
+    seleniumserver: local
+win-mobile-local:
+    browser: mobile 
+    seleniumserver: local
+
+win-chrome-vdi:
+    browser: chrome
+    seleniumserver: remote
+    seleniumserverhost: http://jenprd.global.coach.com:4444/wd/hub 
+win-firefox-vdi:
+    browser: firefox
+    seleniumserver: remote
+    seleniumserverhost: http://NJ-RAW-063-019.global.coach.com:4444/wd/hub
+win-ie-vdi:
+    browser: ie 
+    seleniumserver: remote
+    seleniumserverhost: http://NJ-RAW-063-019.global.coach.com:4444/wd/hub
+
+ios-iphone-browserstack:
+    browser: iosMobile
+    seleniumserver: remote
+    seleniumserverhost: https://ecomqa1:1QudktBEpWjrFgwWcoQe@hub-usw.browserstack.com/wd/hub
+    
+ios-ipad-browserstack:
+    browser: iosIpad
+    seleniumserver: remote
+    seleniumserverhost: https://sugandhamathur1:NtYfoADEs2XwzivPcppe@hub-usw.browserstack.com/wd/hub

@@ -1,0 +1,52 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Kate Spade Sanity" preserve-order="true" parallel="classes" thread-count="1">
+	<test name="Kate Spade Sanity - ROE - iPad">
+		<parameter name="locale" value="ROE" />
+		<groups>
+			<run>
+				<include name="desktop"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_609_VerifyHeaderElements"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_614_HeaderSimplifiedCheckoutIncludedElements"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_620_CategoryNavigationIncludedElements"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_621_VerifySignInRegisterSection"/>
+			<class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_623_VerifyHomePageFooterLinks"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_629_632_719_Search_Result_No_Results_Included_Elements"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_630_633_Verify_SearchNavigation"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_637_VerifyContactUsPage"/>
+			<class name="com.katespade.tests.regions.eu.roe.viewports.mobile.Device_KSEU_ROE_647_VerifyUserCanChangeCountryFromCountrySelector"/>
+			<class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_660_VerifyContentBrowsePage_GeneralElements"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_679_VerifyPDP"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_679_687_688_PDP_VerifyTheDisplayOfProductInformationOnPDPPage"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_680_PDPVerifyUserIsAbleToAddItemToWishlist"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_682_PDP_Verify_User_Has_The_Ability_To_See_Previously_Viewed_Products"/>
+            <class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_683_Verify_Registered_User_Is_Able_To_Add_A_Product_To_Their_Bag"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_715_VerifySearchIncludedElements"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_717_Search_Results_Pagination"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_720_723_724_727_ShoppingBag_Checkout_Flow"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_735_Checkout_VerifyUserCanLoginFromShippingPageAndCheckTheFlowTillBillingPage"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_736_742_Checkout_Verify_Guest_User_Can_Begin_Checkout_Process"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_736_742_Checkout_Verify_Registered_User_Can_Begin_Checkout_Process"/>
+			<class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_737_VerifyForGuestUser_CountryDropdownWillShowCountryThatTheUserIsOn"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_737_VerifyThatRegisteredUserCanEnterTheirShippingAddressOnTheShippingAddressPage"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_739_VerifyGiftMessagingOnShippingPage"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_740_Checkout_Guest_User_Order_Summary"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_742_Checkout_Continue"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_750_UK_Checkout_Verify_That_Customer_Is_Able_ToFind_Address_By_Enterng_Zip_Code"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_760_761_762"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_771_VerifyLoginAndRegistrationPageFlow"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_774_Account_Creation"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_776_VerifyLeftHandNavigation"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_778_VerifyUsersPersonalDataOnMyAccountPage"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_780_782_VerifyUserIsAbleToAddAndEditAddresses"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_783_UK_VerifyAddAndEditAddressesPostalCodeLookUp"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_786_VerifyUserCanAddAndRemoveCreditCardFromAccountPage"/>
+			<class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_798_Wishlist_VerifyWishListiFunctionalityForGuestUser"/>
+            <class name="com.katespade.tests.regions.eu.viewports.mobile.Device_KSEU_798_Wishlist_VerifyWishListiFunctionalityForRegisteredUser"/>
+            <class name="com.katespade.tests.regions.eu.viewports.mobile.Device_TestCase_VerifyUserIsAbleToChangeCountryUsingCountryToggle"/>
+            <class name="com.katespade.tests.regions.eu.viewports.mobile.Device_TestCase_VerifyUserIsAbleToRegisterAndLoginIntoKateSpade"/>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,31 @@
+ProjectName: Coach
+ 
+users:
+  user1:
+    username: testautomation@qa.com
+    password: Qait@1234 	
+
+test_data_mode: wiki-page                                                                                         
+test_data_pages:                                                      
+    d1: "81003182"
+    d2: "78480362"                                                      
+    US: "81003182"
+    UK: "78480362"
+    FR: "79003904"
+    IT: "79003909" 
+    ES: "79003923"
+    DE: "79003914"  
+    CA: "80642158"                              
+    categoriesAndItems: "80642158"
+    
+
+# credentials
+wiki_url: https://confluence.coach.com
+wiki_username: aBagga
+wiki_password: Qait@123
+
+
+# Demandware API
+api_url: http://uk-dwdevelopment2.coach.com/
+api_client_id: 1c9f188b-df29-46a4-a5f1-d0c67fd606b2
+api_version: v16_5

@@ -1,0 +1,55 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Kate Spade Production Health Check Suite" preserve-order="true" parallel="classes" thread-count="3">
+	<test name="Kate Spade Production Health Check Suite - ROE - Desktop">
+		<parameter name="locale" value="ROE" />
+		<groups>
+			<run>
+				<include name="desktop"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_614_Header_VerifySimplifiedHeaderInCheckoutFlow"/>
+			<class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_616_617_VerifyCategoryNavigationElementsInHeader"/>
+			<class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_623_VerifyHomePageFooterLinks"/>			
+			<class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_629_632_719_Search_Result_No_Results_Included_Elements"/>			
+			<class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_630_633_Verify_SearchNavigation"/>
+			<class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_636_Verify_Contact_Us_Page"/>
+			<class name="com.katespade.tests.regions.eu.roe.viewports.desktop.KSEU_ROE_640_641_644_VerifyStoreLocatorFunctionality"/>
+			<class name="com.katespade.tests.regions.eu.roe.viewports.desktop.KSEU_ROE_647_VerifyUserCanChangeCountryFromCountrySelector"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_662_Category_Browse_Page_Load_More"/>
+			<class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_679_687_688_PDP_VerifyTheDisplayOfProductInformationOnPDPPage"/>
+			<class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_680_PDP_Verify_UserIs_Able_To_Add_Item_To_Wishlist"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_682_PDP_Verify_User_Has_The_Ability_To_See_Previously_Viewed_Products"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_683_Verify_Registered_User_Is_Able_To_Add_A_Product_To_Their_Bag"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_717_Search_Results_Pagination"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_720_723_724_727_ShoppingBag_Checkout_Flow"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_735_Checkout_VerifyUserCanLoginFromShippingPageAndCheckTheFlowTillBillingPage"/>
+            <class name="com.katespade.tests.regions.eu.roe.viewports.desktop.KSEU_ROE_738_Checkout_Verify_Guest_User_Can_Choose_Shipping_Method_During_Checkout"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_739_VerifyGiftMessagingOnShippingPage"/>
+            <!-- <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_747_Checkout_Verify_Guest_User_Can_Input_Address_For_Billing"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_748_Checkout_Verify_Registered_User_Can_Input_Address_For_Billing"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_749_Checkout_Verify_Billing_Address_Required_Input_Form_Field_Are_Validated"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_751_Checkout_Billing_Page_Promotion_Code"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_752_Checkout_Verify_Guest_User_Have_Ability_To_Select_Credit_Card_Payment_Method"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_753_Checkout_Billing_Payment_Method_PayPal_Guest_User"/>
+            <class name="com.katespade.tests.regions.eu.roe.viewports.desktop.KSEU_ROE_754_Checkout_Billing_Payment_Method_Klarna_Guest_User"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_757_Checkout_Billing_Payment_Method_PayPal_Logged_In_User"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_756_758_759_765_766_Checkout_Select_Credit_Card_Payment_Method"/> -->
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_760_761_762"/>
+            <!-- <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_767_Order_Receipt_Verify_Guest_User_Can_Create_Account_From_Order_Receipt"/> -->
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_771_VerifyLoginAndRegistrationPageFlow"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_774_Account_Creation"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_776_VerifyLeftHandNavigation"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_778_VerifyUsersPersonalDataOnMyAccountPage"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_780_782_VerifyUserIsAbleToAddAndEditAddresses"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_786_VerifyUserCanAddAndRemoveCreditCardFromAccountPage"/>
+            <!-- <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_788_789_Verify_Guest_User_Can_Check_The_Status_Of_An_Order_And_Order_History_Details"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_791_792_793_796_Verify_That_Registered_User_Is_Able_To_See_Orders_In_Order_History_Page"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_795_VerifyOrderHistoryforRegisteredUser"/> -->
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.KSEU_802_Verify_404_Error_Page"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.TestCase_VerificationOfShopGridPage"/>
+			<class name="com.katespade.tests.regions.eu.viewports.desktop.TestCase_VerifyHomePageHeaderLinks"/>
+            <class name="com.katespade.tests.regions.eu.viewports.desktop.TestCase_VerifyUserIsAbleToChangeCountryUsingCountryToggle"/>
+		</classes>
+	</test>
+</suite>
